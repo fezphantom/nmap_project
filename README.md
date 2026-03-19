@@ -18,6 +18,7 @@ pip install python-nmap streamlit pandas
 ## Run Scan
 ```bash
 nmap -sV -oX scan.xml 192.168.1.0/24
+nmap -sV -oX scan.xml 192.168.56.101
 ```
 
 ## Run App
