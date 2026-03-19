@@ -1,0 +1,14 @@
+﻿,port,state,service
+0,22,open,ssh
+1,25,filtered,smtp
+2,80,open,http
+3,135,filtered,msrpc
+4,139,filtered,netbios-ssn
+5,445,filtered,microsoft-ds
+6,458,filtered,appleqtc
+7,808,filtered,ccproxy-http
+8,1081,filtered,pvuniwien
+9,5030,filtered,surfpass
+10,7625,filtered,unknown
+11,9929,open,nping-echo
+12,31337,open,tcpwrapped
