@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from parser import parse_nmap_xml, classify_risk  # 🔥 THIS IS THE LINK
+from report_generator import generate_pdf_report
 
 st.title("🔐 Nmap Security Dashboard")
 
@@ -14,3 +15,7 @@ if file:
     df["risk"] = df.apply(lambda x: classify_risk(x["port"], x["state"]), axis=1)
 
     st.dataframe(df)
+
+if st.button("Generate PDF Report"):
+    generate_pdf_report(df)
+    st.success("PDF Report Generated!")
